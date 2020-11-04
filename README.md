@@ -7,11 +7,9 @@
 |nick_name         |string|null: false |
 |last_name         |string|null: false |
 |first_name        |string|null: false |
-|last_name(Kana)   |string|null: false |
-|first_name(Kana)  |string|null: false |
-|birthday_year     |string|null: false |
-|birthday_month    |string|null: false |
-|birthday_date     |string|null: false |
+|last_name_Kana    |string|null: false |
+|first_name_Kana   |string|null: false |
+|birth_date_id     |date  |null: false |
 
 ###Association
 - has_many: items
@@ -26,14 +24,21 @@
 |price          |integer      |null: false      |
 |category_id    |integer      |null: false      |
 |status_id      |integer      |null: false      |
-|delivery fee   |integer      |null: false      |
-|shipment_source|integer      |null: false      |
-|shipping_days  |integer      |null: false      |
 |user           |references   |foreign_key: true|
 
 ###Association
 - belongs_to: user
-- has_one: oder
+- has_one: order
+- has_one: delivery_info
+
+##delivery_info
+|delivery fee_id   |integer      |null: false      |
+|shipment_source_id|integer      |null: false      |
+|shipping_days_id  |integer      |null: false      |
+|item              |references   |foreign_key: true|
+
+###Association
+- belong_to: item
 
 ##order
 
