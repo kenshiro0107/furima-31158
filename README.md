@@ -13,7 +13,8 @@
 
 ###Association
 - has_many: items
-- has_one: order
+- has_many: order
+- has_one: address
 
 ##itemテーブル
 
@@ -37,13 +38,24 @@
 
 | Colum        | Type     | Options         |
 |--------------|----------|-----------------|
+|user          |references|foreign_key: true|
+|item          |references|foreign_key: true|
+
+###Association
+- belongs_to: user
+- belongs_to: item
+
+##address
+
+| Colum        | Type     | Options         |
+|--------------|----------|-----------------|
 |postal_number |string    |null: false      |
 |prefectural_id|integer   |null: false      |
 |municipality  |string    |null: false      |
 |address       |string    |null: false      |
 |building_name |string    |                 |
 |phone_number  |string    |null: false      |
+|user          |references|foreign_key: true|
 
 ###Association
-- belongs_to: order 
-- belongs_to: item
+- belongs_to: user
