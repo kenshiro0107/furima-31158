@@ -13,7 +13,7 @@
 
 ###Association
 - has_many: items
-- has_one: oder
+- has_one: order
 
 ##itemテーブル
 
@@ -28,7 +28,7 @@
 |delivery fee_id   |integer      |null: false      |
 |shipment_source_id|integer      |null: false      |
 |shipping_days_id  |integer      |null: false      |
-|item              |references   |foreign_key: true|
+|user              |references   |foreign_key: true|
 
 ###Association
 - belongs_to: user
@@ -38,14 +38,14 @@
 
 | Colum        | Type     | Options         |
 |--------------|----------|-----------------|
-|price         |integer   |null: false      |
+|settlement    |integer   |null: false      |
 |user          |references|foreign_key: true|
 |item          |references|foreign_key: true|
 
 ###Association
 - belongs_to: user
-- belongs_to: items
-- has_many: delivery
+- belongs_to: item
+- has_one: delivery
 
 ##delivery
 
