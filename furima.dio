@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-05T02:21:14.066Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="dV718Gd7-q3laT_RAnXE">
+<mxfile host="65bd71144e" modified="2020-11-05T05:29:25.797Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="tbPIUoKKaj25W8dkvCjp">
     <diagram id="PVEE-m6z0i9MWGZsdS4O" name="ページ1">
         <mxGraphModel dx="1164" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -34,13 +34,8 @@
                         <mxPoint x="250" y="420" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="41" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="12">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="460" y="615" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="12" value="orderテーブル&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum        | Type     | Options         |&lt;/div&gt;&lt;div&gt;|----------------------------------|&lt;/div&gt;&lt;div&gt;|price         |integer   |null: false      |&lt;/div&gt;&lt;div&gt;|user          |references|foreign_key: true|&lt;/div&gt;&lt;div&gt;|item          |references|foreign_key: true|&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="560" width="275.5" height="110" as="geometry"/>
+                <mxCell id="12" value="orderテーブル&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum        | Type     | Options         |&lt;/div&gt;&lt;div&gt;|-----------------------------------|&lt;/div&gt;&lt;div&gt;|postal_number |string    |null: false      |&lt;/div&gt;&lt;div&gt;|prefectural_id|integer   |null: false      |&lt;/div&gt;&lt;div&gt;|municipality  |string    |null: false      |&lt;/div&gt;&lt;div&gt;|address       |string    |null: false      |&lt;/div&gt;&lt;div&gt;|building_name |string    |                 |&lt;/div&gt;&lt;div&gt;|phone_number  |string    |null: false      |&lt;/div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="570" width="290" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
@@ -50,9 +45,6 @@
                             <mxPoint x="410" y="320"/>
                         </Array>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="40" value="deliveryテーブル&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum        | Type  | Options   |&lt;/div&gt;&lt;div&gt;|----------------------------------|&lt;/div&gt;&lt;div&gt;|postal_number |string |null: false|&lt;/div&gt;&lt;div&gt;|prefectural_id|integer|null: false|&lt;/div&gt;&lt;div&gt;|municipality  |string |null: false|&lt;/div&gt;&lt;div&gt;|address       |string |null: false|&lt;/div&gt;&lt;div&gt;|building_name |string |           |&lt;/div&gt;&lt;div&gt;|phone_number  |string |null: false|&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="460" y="525" width="270" height="180" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

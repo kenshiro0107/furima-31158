@@ -24,7 +24,6 @@
 |price             |integer      |null: false      |
 |category_id       |integer      |null: false      |
 |status_id         |integer      |null: false      |
-|user              |references   |foreign_key: true|
 |delivery fee_id   |integer      |null: false      |
 |shipment_source_id|integer      |null: false      |
 |shipping_days_id  |integer      |null: false      |
@@ -38,25 +37,13 @@
 
 | Colum        | Type     | Options         |
 |--------------|----------|-----------------|
-|settlement    |integer   |null: false      |
-|user          |references|foreign_key: true|
-|item          |references|foreign_key: true|
-
-###Association
-- belongs_to: user
-- belongs_to: item
-- has_one: delivery
-
-##delivery
-
-| Colum        | Type  | Options   |
-|--------------|-------|-----------|
-|postal_number |string |null: false|
-|prefectural_id|integer|null: false|
-|municipality  |string |null: false|
-|address       |string |null: false|
-|building_name |string |           |
-|phone_number  |string |null: false|
+|postal_number |string    |null: false      |
+|prefectural_id|integer   |null: false      |
+|municipality  |string    |null: false      |
+|address       |string    |null: false      |
+|building_name |string    |                 |
+|phone_number  |string    |null: false      |
 
 ###Association
 - belongs_to: order 
+- belongs_to: item
