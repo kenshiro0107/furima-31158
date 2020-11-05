@@ -13,7 +13,7 @@
 
 ###Association
 - has_many: items
-- has_many: order
+- has_many: orders
 
 ##itemテーブル
 
@@ -25,7 +25,7 @@
 |category_id       |integer      |null: false      |
 |status_id         |integer      |null: false      |
 |delivery fee_id   |integer      |null: false      |
-|shipment_source_id|integer      |null: false      |
+|prefectural_id    |integer      |null: false      |
 |shipping_days_id  |integer      |null: false      |
 |user              |references   |foreign_key: true|
 

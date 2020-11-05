@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-05T06:32:14.738Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="5DjgQlrYFnBaFxHD8Efc">
+<mxfile host="65bd71144e" modified="2020-11-05T06:47:12.510Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="1OrCbXZJP9Jzs3hd8skO">
     <diagram id="PVEE-m6z0i9MWGZsdS4O" name="ページ1">
         <mxGraphModel dx="1991" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -12,16 +12,33 @@
                 <mxCell id="34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="470" y="230" as="targetPoint"/>
-                        <mxPoint x="410" y="270" as="sourcePoint"/>
+                        <mxPoint x="410" y="280" as="sourcePoint"/>
                         <Array as="points">
                             <mxPoint x="410" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.327;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="130" y="550" as="targetPoint"/>
+                        <mxPoint x="180" y="490" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="130" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.664;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="490" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="223" y="490"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="5" value="&lt;p&gt;&amp;nbsp;userテーブル&lt;/p&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum            | Type | Options    |&lt;/div&gt;&lt;div&gt;|--------------------------------------|&lt;/div&gt;&lt;div&gt;|email             |string|null: false |&lt;/div&gt;&lt;div&gt;|encrypted_password|string|null: false |&lt;/div&gt;&lt;div&gt;|nick_name         |string|null: false |&lt;/div&gt;&lt;div&gt;|last_name         |string|null: false |&lt;/div&gt;&lt;div&gt;|first_name        |string|null: false |&lt;/div&gt;&lt;div&gt;|last_name_Kana    |string|null: false |&lt;/div&gt;&lt;div&gt;|first_name_Kana   |string|null: false |&lt;/div&gt;&lt;div&gt;|birth_date        |date  |null: false |&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="30" y="160" width="300" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="itemテーブル&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum            | Type        | Options         |&lt;/div&gt;&lt;div&gt;|----------------------------------------|&lt;/div&gt;&lt;div&gt;|name              |sting        |null: false      |&lt;/div&gt;&lt;div&gt;|info              |text         |null: false      |&lt;/div&gt;&lt;div&gt;|price             |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|category_id       |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|status_id         |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|user              |references   |foreign_key: true|&lt;/div&gt;&lt;div&gt;|delivery fee_id   |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|shipment_source_id|integer      |null: false      |&lt;/div&gt;&lt;div&gt;|shipping_days_id  |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|user              |references   |foreign_key: true|&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="6" value="itemテーブル&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;| Colum            | Type        | Options         |&lt;/div&gt;&lt;div&gt;|----------------------------------------|&lt;/div&gt;&lt;div&gt;|name              |sting        |null: false      |&lt;/div&gt;&lt;div&gt;|info              |text         |null: false      |&lt;/div&gt;&lt;div&gt;|price             |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|category_id       |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|status_id         |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|delivery fee_id   |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|prefectural_id    |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|shipping_days_id  |integer      |null: false      |&lt;/div&gt;&lt;div&gt;|user              |references   |foreign_key: true|&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="470" y="160" width="310" height="260" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="12">
@@ -40,7 +57,7 @@
                 <mxCell id="33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="470" y="320" as="targetPoint"/>
-                        <mxPoint x="410" y="280" as="sourcePoint"/>
+                        <mxPoint x="410" y="260" as="sourcePoint"/>
                         <Array as="points">
                             <mxPoint x="410" y="320"/>
                         </Array>
