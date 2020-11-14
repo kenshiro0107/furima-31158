@@ -24,7 +24,7 @@
 |price             |integer      |null: false      |
 |category_id       |integer      |null: false      |
 |status_id         |integer      |null: false      |
-|delivery fee_id   |integer      |null: false      |
+|delivery_fee_id   |integer      |null: false      |
 |prefectural_id    |integer      |null: false      |
 |shipping_days_id  |integer      |null: false      |
 |user              |references   |foreign_key: true|
