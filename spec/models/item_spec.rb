@@ -58,27 +58,27 @@ RSpec.describe Item, type: :model do
       it 'category_idが--だと登録できない' do
         @item.category_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Category must be other than 1")
+        expect(@item.errors.full_messages).to include('Category must be other than 1')
       end
       it 'status_idが--だと登録できない' do
         @item.status_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Status must be other than 1")
+        expect(@item.errors.full_messages).to include('Status must be other than 1')
       end
       it 'delivery_fee_idが--だと登録できない' do
         @item.delivery_fee_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Delivery fee must be other than 1")
+        expect(@item.errors.full_messages).to include('Delivery fee must be other than 1')
       end
       it 'prefectual_idが--だと登録できない' do
         @item.prefectual_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Prefectual must be other than 1")
+        expect(@item.errors.full_messages).to include('Prefectual must be other than 1')
       end
       it 'shipping_days_idが--だと登録できない' do
         @item.shipping_days_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Shipping days must be other than 1")
+        expect(@item.errors.full_messages).to include('Shipping days must be other than 1')
       end
       #--が１の時に登録出来ないテスト↑
       it 'imageが空だと登録できない' do
