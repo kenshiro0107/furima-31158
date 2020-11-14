@@ -42,7 +42,7 @@ RSpec.describe User, type: :model do
       it 'last_nameのフリガナが全角（カタカナ）でなければ保存できない' do
         @user.last_name_Kana = 'たろう'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Last name kana is invalid")
+        expect(@user.errors.full_messages).to include('Last name kana is invalid')
       end
       it 'first_nameが空だと登録できない' do
         @user.first_name = ''
@@ -57,12 +57,12 @@ RSpec.describe User, type: :model do
       it 'first_nameが全角（漢字・ひらがな・カタカナ）でなければ保存できない' do
         @user.first_name = 'YAMADA'
         @user.valid?
-        expect(@user.errors.full_messages).to include("First name is invalid")
+        expect(@user.errors.full_messages).to include('First name is invalid')
       end
       it 'first_nameのフリガナは、全角（カタカナ）でなければできない' do
         @user.first_name_Kana = 'やまだ'
         @user.valid?
-        expect(@user.errors.full_messages).to include("First name kana is invalid")
+        expect(@user.errors.full_messages).to include('First name kana is invalid')
       end
       # ここまでlast_nameとfirst_nameのテストコード
       it 'emailが空では登録できない' do
