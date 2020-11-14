@@ -11,11 +11,6 @@ RSpec.describe Item, type: :model do
           prefectual_id, shipping_days_id, imageが存在すれば登録できる' do
         expect(@item).to be_valid
       end
-      it 'priceの値が300~9999999であれば登録できる' do
-        @item.price = 300
-        @item.price = 9_999_999
-        expect(@item).to be_valid
-      end
     end
 
     context '新規登録がうまくいかないとき' do
@@ -59,6 +54,33 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include("Shipping days can't be blank")
       end
+      #--が１の時に登録出来ないテスト↓
+      it 'category_idが--だと登録できない' do
+        @item.category_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Category must be other than 1")
+      end
+      it 'status_idが--だと登録できない' do
+        @item.status_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Status must be other than 1")
+      end
+      it 'delivery_fee_idが--だと登録できない' do
+        @item.delivery_fee_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Delivery fee must be other than 1")
+      end
+      it 'prefectual_idが--だと登録できない' do
+        @item.prefectual_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Prefectual must be other than 1")
+      end
+      it 'shipping_days_idが--だと登録できない' do
+        @item.shipping_days_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Shipping days must be other than 1")
+      end
+      #--が１の時に登録出来ないテスト↑
       it 'imageが空だと登録できない' do
         @item.image = nil
         @item.valid?
