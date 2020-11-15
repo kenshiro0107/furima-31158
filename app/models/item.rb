@@ -20,6 +20,6 @@ class Item < ApplicationRecord
   validates :status_id, presence: true, numericality: { other_than: 1 }
   validates :delivery_fee_id, presence: true, numericality: { other_than: 1 }
   validates :prefectual_id, presence: true, numericality: { other_than: 1 }
-  validates :shipping_days_id, presence: true, numericality: { other_than: 1 }
+  validates :shipping_day_id, presence: true, numericality: { other_than: 1 }
   validates :image, presence: true
 end
