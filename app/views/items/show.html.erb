@@ -23,24 +23,26 @@
       </span>
     </div>
 
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
     <% if user_signed_in? && current_user.id == @item.user_id %>
     <%= link_to '商品の編集', "#", method: :get, class: "item-red-btn" %>
     <p class='or-text'>or</p>
     <%= link_to '削除', "#", method: :delete, class:'item-destroy' %>
     <% else %>
-    <%# current_user.idが確認出来た場合にelseで処理が止まって下記の記述が読み込まれなくなり、
-          current_userには購入画面へのボタンが非表示になる %>
+    <% if user_signed_in? %>
+    <%# 出品者本人で尚且つログイン状態ならcurrent_user.idが確認されelseで処理が止まって下記の
+        記述が読み込まれなくなり、current_userには購入画面へのボタンが非表示になる %>
 
-    <%# current_user.idが確認出来なかった場合はelseまでの処理は読み込まれず、
-          以下の記述が読見込まれ購入画面へのボタンが表示される %>
-          
+    <%# 出品者本人ではなくログイン状態であればcurrent_user.idが確認出来きずにelseまでの処理は読み込まれず、
+        if user_signed_in?でログイン状態を確認され購入画面へのボタンが表示される %>
+
+    <%# ログインしていないユーザーにはifもelseも読み込まれず、
+      編集、削除、購入画面のボタンが非表示になる %>
+
     <%# 商品が売れていない場合はこちらを表示しましょう %>
     <%= link_to '購入画面に進む', "#" ,class:"item-red-btn"%>
     <% end %>
+    <% end %>
     <%# //商品が売れていない場合はこちらを表示しましょう %>
-
-    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
     <div class="item-explain-box">
       <span><%= "商品説明" %></span>
@@ -108,7 +110,7 @@
       後ろの商品 ＞
     </a>
   </div>
-  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>をもっと見る</a>
+  <a href="#" class='another-item'><%= @item.category.name %>をもっと見る</a>
 </div>
 
 <%= render "shared/footer" %>
