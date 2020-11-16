@@ -6,8 +6,8 @@ FactoryBot.define do
     status_id             { 2 }
     delivery_fee_id       { 2 }
     prefectual_id         { 2 }
-    shipping_day_id      { 2 }
-    price                 { 3000 }
+    shipping_day_id { 2 }
+    price { 3000 }
     association :user
     after(:build) do |item|
       item.image.attach(io: File.open(
