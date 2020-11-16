@@ -78,7 +78,7 @@ RSpec.describe Item, type: :model do
       it 'shipping_day_idが--だと登録できない' do
         @item.shipping_day_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Shipping day must be other than 1")
+        expect(@item.errors.full_messages).to include('Shipping day must be other than 1')
       end
       #--が１の時に登録出来ないテスト↑
       it 'imageが空だと登録できない' do
