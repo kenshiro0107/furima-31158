@@ -31,7 +31,9 @@
         <p class='or-text'>or</p>
         <%= link_to '削除', item_path(@item.id), method: :delete, class:'item-destroy' %>
       <% else %>
-        
+        <% unless @item.order %>
+        <%= link_to '購入画面に進む',item_orders_path(@item.id) ,class:"item-red-btn"%>
+        <% end %>
         <%# 出品者本人で尚且つログイン状態ならcurrent_user.idが確認されelseで処理が止まって下記の
             記述が読み込まれなくなり、current_userには購入画面へのボタンが非表示になる %>
         
@@ -44,9 +46,7 @@
         
       <% end %>  
     <% end %>
-        <% if @item.order %>
-        <%= link_to '購入画面に進む',item_orders_path(@item.id) ,class:"item-red-btn"%>
-        <% end %>
+        
 
     <div class="item-explain-box">
       <span><%= @item.info %></span>
